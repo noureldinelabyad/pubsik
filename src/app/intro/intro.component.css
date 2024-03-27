@@ -1,0 +1,125 @@
+.intro {
+   margin-left: 20%;
+   margin-right: 20%;
+ display: flex;
+  background-color: #ff69b4; /* Hot pink */
+  max-width: 945px;
+}
+
+.container {
+display: grid;
+justify-self: center;
+justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ff69b4; /* Hot pink */
+
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-items: center;
+    z-index: 1;
+    height: 500px;
+    flex-direction: row;
+    margin: 10px;
+    align-items: center;
+}
+
+
+.l{
+  width: 50%;
+  align-self: flex-start;
+ 
+}
+
+.r{
+  width: 50%;
+  align-self: flex-end;
+
+}
+
+.paragraph-r{
+   
+    font-size: large;
+    font-family:cursive;
+    background-color: #ff69b4;
+    border-radius: 2%;
+    padding: 3px;
+
+
+}
+
+.paragraph-l{
+    text-align: right;
+    align-self: flex-end;
+
+    margin-top: 10px;
+  }
+
+/* Common style for both arrows */
+.graph__wrapper {
+    display: inline-block;
+    justify-self: center;
+  }
+  
+  .path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+
+
+
+.dashed {
+  stroke-dasharray: 5, 12;
+}
+
+#arrow {
+  animation: arrow 2s linear forwards;
+  opacity: 0;
+}
+
+
+.section {
+    display: flex;
+    align-self: flex-start;
+    
+    border-radius:  30px;
+
+    margin: 20px;
+}
+
+
+.section-r {
+    border-radius:  30px;
+    width: 50%; /* Adjust width as needed */
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.white-bg {
+    background-color: #fff;
+    border: solid black;
+    color: #000; /* Black */
+}
+
+.pink-bg {
+    background-color: #ff69b4; /* Hot pink */
+    color: #fff; /* White */
+    width: 100%;
+}
